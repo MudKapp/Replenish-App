@@ -88,7 +88,7 @@ class _DayState extends State<Day> {
                             child: IconButton(
                               icon: Icon(Icons.message),
                               color: Colors.white,
-                              onPressed: () {},
+                              onPressed: () {Navigator.pushNamed(context, '/comments',arguments: {"data":args['data']});},
                               splashRadius: 25,
                             )
                         ),
